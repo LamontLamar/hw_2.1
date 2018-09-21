@@ -1,0 +1,23 @@
+function setup() {
+  createCanvas(400, 400);
+}
+
+var x = 10;
+var changeInX = 8;
+
+function draw() {
+  background(220);
+  
+  rect(x, 200, 40, 40);
+	fill(80, 60, 90)
+  
+  x = x + changeInX;
+  
+  if (x > width) {
+    changeInX = -8;
+  }
+  
+  if (x < 0) {
+    changeInX = 8;
+  }
+}
